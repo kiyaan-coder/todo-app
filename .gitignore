@@ -1,0 +1,9 @@
+# Ignore instance folder
+instance/
+
+# Ignore SQLite DB if not using instance/
+*.db
+
+# Ignore compiled Python files
+__pycache__/
+*.pyc
