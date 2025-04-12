@@ -13,10 +13,11 @@
         </form>
         <ul>
             {% for task in tasks %}
-                <li>
-                    {{ task }}
-                    <a href="/delete/{{ loop.index0 }}" class="delete">❌</a>
-                </li>
+            <li>
+                {{ task.content }}
+                <a href="/delete/{{ task.id }}" class="delete">❌</a>
+            </li>
+            
             {% else %}
                 <p>No tasks yet!</p>
             {% endfor %}
